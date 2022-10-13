@@ -108,11 +108,12 @@ body {
 /*    float: left;*/
 /*    !*overflow: auto;*!*/
 /*}*/
-/*.pull-quote{*/
-/*    width: 100%;*/
-/*    float: left;*/
-/*    clear: both;*/
-/*}*/
+
+.pull-quote{
+    width: 100%;
+    float: left;
+    clear: both;
+}
 
 footer{
     clear: both;
