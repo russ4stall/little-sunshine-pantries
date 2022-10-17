@@ -12,7 +12,7 @@
 /***** FONT STYLES *****/
 
 h1 {
-    font-size: clamp(30px, 20vw, 50px);
+    font-size: clamp(30px, 20vw, 35px);
     font-weight: 800;
     color: var(--deep-indigo);
     font-family: Poppins, sans-serif;
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(60px, 20vw, 80px);
+    font-size: clamp(60px, 20vw, 70px);
     font-weight: 700;
     color: var(--smokey-indigo);
     font-family: 'Lora', serif;
@@ -238,7 +238,7 @@ header h2 {
 @media only screen and (max-width: 600px) {
 
     .button {
-        padding: 100px;
+        padding: 20px;
         margin: 4%;
     }
 
