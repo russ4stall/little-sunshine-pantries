@@ -11,7 +11,7 @@
 
 /***** FONT STYLES *****/
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: 800;
     color: var(--deep-indigo);
@@ -19,26 +19,26 @@ h1{
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 60px;
     font-weight: 700;
     color: var(--smokey-indigo);
     font-family: 'Lora', serif;
 }
 
-h3{
+h3 {
     color: var(--deep-indigo);
     font-size: 30pt;
     font-family: 'Lora', serif;
 }
 
-h4{
+h4 {
     color: var(--deep-indigo);
     font-size: 20px;
     font-family: Poppins, sans-serif;
 }
 
-p{
+p {
     color: var(--smokey-indigo);
     font-size: 18px;
     line-height: 30px;
@@ -48,7 +48,7 @@ p{
 
 /***** BASE STYLES *****/
 
-.button{
+.button {
     color: var(--cream);
     background-color: var(--smokey-indigo);
     padding: 10px;
@@ -66,11 +66,11 @@ p{
     background-color: var(--deep-indigo);
 }
 
-span{
+span {
     color: var(--sunshine-orange);
 }
 
-.app{
+.app {
     background-color: var(--cream);
     overflow: hidden;
 }
@@ -82,7 +82,7 @@ body {
 
 /***** GRID *****/
 
-.full-width{
+.full-width {
     width: 80%;
     float: left;
     margin: 0 auto;
@@ -93,7 +93,7 @@ body {
     overflow-inline: hidden;
 }
 
-.half-width{
+.half-width {
     width: 50%;
     float: left;
 }
@@ -111,31 +111,31 @@ body {
 /*    !*overflow: auto;*!*/
 /*}*/
 
-.pull-quote{
+.pull-quote {
     width: 100%;
     float: left;
     clear: both;
 }
 
-footer{
+footer {
     clear: both;
 }
 /***** HEADER STYLES *****/
 
-header .full-width{
+header .full-width {
     padding-top: 5%;
     padding-bottom: 5%;
 }
-nav{
+nav {
     float: right;
 }
-nav ul{
+nav ul {
     margin: 0;
 }
-nav ul li{
+nav ul li {
     display: inline-block;
 }
-nav ul li a{
+nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 25px;
@@ -145,11 +145,11 @@ nav ul li a{
     padding-right: 50px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: var(--deep-indigo);
 }
 
-header h2{
+header h2 {
     padding-top: 5%;
 }
 
@@ -185,11 +185,11 @@ header h2{
     padding-bottom: 5%;
     background-color: var(--light-sunshine);
 }
-#donate h3{
+#donate h3 {
     margin: 0;
 }
 
-#donate .button{
+#donate .button {
     display: inline-block;
 }
 
@@ -200,7 +200,7 @@ header h2{
     padding-bottom: 5%;
     background-color: var(--light-indigo);
 }
-#map h3{
+#map h3 {
     margin: 0;
 }
 
@@ -209,26 +209,58 @@ header h2{
     text-decoration: none;
 }
 
-.map-link:hover{
+.map-link:hover {
     color: var(--smokey-indigo);
 }
 
-#map .button{
+#map .button {
     display: inline-block;
 }
 
 /***** FOOTER STYLES *****/
 
-#footer .full-width{
+#footer .full-width {
     background-color: var(--deep-indigo);
     padding: 2%;
     width: 100%;
 }
-#footer p a{
+#footer p a {
     float: right;
     text-decoration: none;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     color: var(--cream);
     margin-right: 10%;
+}
+
+/***** MOBILE STYLES *****/
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    h3 {
+        font-size: 40pt;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .button {
+        font-size: 30px;
+    }
+
+
+
 }
