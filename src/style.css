@@ -235,30 +235,11 @@ header h2 {
 
 /***** MOBILE STYLES *****/
 
-/*@media only screen and (max-width: 350px) {*/
+@media only screen and (max-width: 350px) {
 
-/*    h1 {*/
-/*        font-size: 40px;*/
-/*    }*/
+    .button {
+        padding: 20px;
+        margin: 4%;
+    }
 
-/*    h2 {*/
-/*        font-size: 200px;*/
-/*    }*/
-
-/*    h3 {*/
-/*        font-size: 40pt;*/
-/*    }*/
-
-/*    h4 {*/
-/*        font-size: 30px;*/
-/*    }*/
-
-/*    p {*/
-/*        font-size: 25px;*/
-/*    }*/
-
-/*    .button {*/
-/*        font-size: 30px;*/
-/*    }*/
-
-/*}*/
+}
