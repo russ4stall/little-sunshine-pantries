@@ -12,7 +12,7 @@
 /***** FONT STYLES *****/
 
 h1 {
-    font-size: 30px;
+    font-size: clamp(30px, 20vw, 50px);
     font-weight: 800;
     color: var(--deep-indigo);
     font-family: Poppins, sans-serif;
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: clamp(60px, 20vw, 80px);
     font-weight: 700;
     color: var(--smokey-indigo);
     font-family: 'Lora', serif;
@@ -28,19 +28,19 @@ h2 {
 
 h3 {
     color: var(--deep-indigo);
-    font-size: 30pt;
+    font-size: clamp(30px, 20vw, 50px);
     font-family: 'Lora', serif;
 }
 
 h4 {
     color: var(--deep-indigo);
-    font-size: 20px;
+    font-size: clamp(20px, 20vw, 30px);
     font-family: Poppins, sans-serif;
 }
 
 p {
     color: var(--smokey-indigo);
-    font-size: 18px;
+    font-size: clamp(18px, 20vw, 25px);
     line-height: 30px;
     text-justify: distribute;
     font-family: Poppins, sans-serif;
@@ -54,7 +54,7 @@ p {
     padding: 10px;
     border: solid 2px var(--smokey-indigo);
     border-radius: 12px;
-    font-size: 20px;
+    font-size: clamp(20px, 20vw, 30px);
     font-family: Poppins, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -138,7 +138,7 @@ nav ul li {
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 25px;
+    font-size: clamp(25px, 20vw, 35px);
     font-family: Poppins, sans-serif;
     font-weight: bolder;
     color: var(--smokey-indigo);
@@ -235,30 +235,30 @@ header h2 {
 
 /***** MOBILE STYLES *****/
 
-@media only screen and (max-width: 350px) {
+/*@media only screen and (max-width: 350px) {*/
 
-    h1 {
-        font-size: 40px;
-    }
+/*    h1 {*/
+/*        font-size: 40px;*/
+/*    }*/
 
-    h2 {
-        font-size: 200px;
-    }
+/*    h2 {*/
+/*        font-size: 200px;*/
+/*    }*/
 
-    h3 {
-        font-size: 40pt;
-    }
+/*    h3 {*/
+/*        font-size: 40pt;*/
+/*    }*/
 
-    h4 {
-        font-size: 30px;
-    }
+/*    h4 {*/
+/*        font-size: 30px;*/
+/*    }*/
 
-    p {
-        font-size: 25px;
-    }
+/*    p {*/
+/*        font-size: 25px;*/
+/*    }*/
 
-    .button {
-        font-size: 30px;
-    }
+/*    .button {*/
+/*        font-size: 30px;*/
+/*    }*/
 
-}
+/*}*/
