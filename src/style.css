@@ -220,7 +220,7 @@ header h2{
 /***** FOOTER STYLES *****/
 
 #footer .full-width{
-    background-color: #2b2c4f;
+    background-color: var(--deep-indigo);
     padding: 2%;
     width: 100%;
 }
