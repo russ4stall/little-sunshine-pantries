@@ -51,7 +51,7 @@ p {
 .button {
     color: var(--cream);
     background-color: var(--smokey-indigo);
-    padding: clamp(10px, 100w, 30px);
+    padding: 10px;
     border: solid 2px var(--smokey-indigo);
     border-radius: 12px;
     font-size: clamp(20px, 20vw, 30px);
@@ -233,13 +233,13 @@ header h2 {
     margin-right: 10%;
 }
 
-/***** MOBILE STYLES *****/
+/**** MOBILE STYLES ****/
 
-/*@media only screen and (max-width: 600px) {*/
+@media only screen and (max-width: 600px) {
 
-/*    .button {*/
-/*        padding: 100px;*/
-/*        margin: 4%;*/
-/*    }*/
+    .button {
+        padding: 20px;
+        margin: 4%;
+    }
 
-/*}*/
+}
