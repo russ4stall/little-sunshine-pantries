@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<div class="app">
     <head>
         <title>Little Sunshine Pantries</title>
         <link rel="stylesheet" href="style.css" >
@@ -9,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+    <div class="app">
 
         <header>
         <div class="full-width">
@@ -66,8 +66,8 @@
                     <h3>Donate</h3>
                     <p>We rely on the support of the community to do the work we do and connect our neighbors to resources they need. Please consider making a donation below.</p>
                     <div class="centered">
-                        <button onclick="window.open('https://account.venmo.com/u/Sunshine_Pantries', '_blank')">Donate Here</button>
-                        <button onclick="window.open('https://a.co/1ID8pUL','_blank')">Amazon Wishlist</button>
+                        <a class="button" href="https://account.venmo.com/u/Sunshine_Pantries" target="_blank">Donate Here</a>
+                        <a class="button" href="https://a.co/1ID8pUL" target="_blank">Amazon Wishlist</a>
                     </div>
                 </div>
             </section>
@@ -75,9 +75,9 @@
                 <section id="map">
                     <div class="full-width">
                         <h3>Visit Us Across Tallahassee</h3>
-                        <p>Check out the <a href="https://www.google.com/maps/d/viewer?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ll=30.431910630667975%2C-84.22895875&z=10">interactive map</a> graciously made by a volunteer to locate a pantry near you.</p>
+                        <p>Check out the <a class="map-link" href="https://www.google.com/maps/d/viewer?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ll=30.431910630667975%2C-84.22895875&z=10">interactive map</a> graciously made by a volunteer to locate a pantry near you.</p>
                         <div class="centered">
-                            <button onclick="window.open('https://www.google.com/maps/d/viewer?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ll=30.431910630667975%2C-84.22895875&z=10', '_blank')">View Map</button>
+                            <a class="button" href="https://www.google.com/maps/d/viewer?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ll=30.431910630667975%2C-84.22895875&z=10" target="_blank">View Map</a>
                         </div>
                     </div>
                 </section>
@@ -92,6 +92,6 @@
             </section>
         </footer>
 
+    </div>
     </body>
-</div>
 </html>

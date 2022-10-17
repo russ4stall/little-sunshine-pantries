@@ -48,7 +48,7 @@ p{
 
 /***** BASE STYLES *****/
 
-button{
+.button{
     color: var(--cream);
     background-color: var(--smokey-indigo);
     padding: 10px;
@@ -59,9 +59,10 @@ button{
     text-transform: uppercase;
     font-weight: bolder;
     margin: 2%;
+    text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--deep-indigo);
 }
 
@@ -76,6 +77,7 @@ span{
 
 body {
     margin: 0;
+    background-color: var(--deep-indigo);
 }
 
 /***** GRID *****/
@@ -187,7 +189,7 @@ header h2{
     margin: 0;
 }
 
-#donate button{
+#donate .button{
     display: inline-block;
 }
 
@@ -202,13 +204,17 @@ header h2{
     margin: 0;
 }
 
-#map a{
+.map-link {
     color: var(--deep-indigo);
     text-decoration: none;
 }
 
-#map a:hover{
+.map-link:hover{
     color: var(--smokey-indigo);
+}
+
+#map .button{
+    display: inline-block;
 }
 
 /***** FOOTER STYLES *****/
