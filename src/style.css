@@ -11,36 +11,37 @@
 
 /***** FONT STYLES *****/
 
-h1 {
-    font-size: clamp(30px, 20vw, 35px);
+.heading-primary {
+    font-size: clamp(20px, 100vw, 30px);
     font-weight: 800;
     color: var(--deep-indigo);
     font-family: Poppins, sans-serif;
     margin: 0;
 }
 
-h2 {
-    font-size: clamp(40px, 20vw, 60px);
+.pull-quote {
+    font-size: clamp(10px, 100vw, 30px);
     font-weight: 700;
     color: var(--smokey-indigo);
     font-family: 'Lora', serif;
 }
 
-h3 {
+.heading-secondary {
     color: var(--deep-indigo);
-    font-size: clamp(30px, 20vw, 50px);
+    font-size: clamp(20px, 100vw, 40px);
     font-family: 'Lora', serif;
 }
 
-h4 {
-    color: var(--deep-indigo);
-    font-size: clamp(20px, 20vw, 30px);
-    font-family: Poppins, sans-serif;
-}
+/*h4 {*/
+/*    color: var(--deep-indigo);*/
+/*    font-size: clamp(20px, 100vw, 40px);*/
+/*    font-family: Poppins, sans-serif;*/
+/*}*/
 
 p {
     color: var(--smokey-indigo);
-    font-size: clamp(18px, 20vw, 25px);
+    font-size: clamp(18px, 100vw, 20px);
+    /*font-size: clamp(18px, 20vw, 25px);*/
     line-height: 30px;
     text-justify: distribute;
     font-family: Poppins, sans-serif;
@@ -54,7 +55,7 @@ p {
     padding: 10px;
     border: solid 2px var(--smokey-indigo);
     border-radius: 12px;
-    font-size: clamp(20px, 20vw, 30px);
+    font-size: clamp(20px, 100vw, 30px);
     font-family: Poppins, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -70,7 +71,7 @@ span {
     color: var(--sunshine-orange);
 }
 
-.app {
+.background-styling {
     background-color: var(--cream);
     overflow: hidden;
 }
@@ -115,6 +116,7 @@ body {
     width: 100%;
     float: left;
     clear: both;
+    font-size: clamp(30px, 20vw, 60px);
 }
 
 footer {
@@ -135,10 +137,11 @@ nav ul {
 nav ul li {
     display: inline-block;
 }
-nav ul li a {
+nav .link-text {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: clamp(25px, 20vw, 35px);
+    font-size: 25px;
+    /*font-size: clamp(25px, 20vw, 35px);*/
     font-family: Poppins, sans-serif;
     font-weight: bolder;
     color: var(--smokey-indigo);
@@ -185,7 +188,7 @@ header h2 {
     padding-bottom: 5%;
     background-color: var(--light-sunshine);
 }
-#donate h3 {
+#donate .heading-secondary {
     margin: 0;
 }
 
@@ -200,7 +203,7 @@ header h2 {
     padding-bottom: 5%;
     background-color: var(--light-indigo);
 }
-#map h3 {
+#map .heading-secondary {
     margin: 0;
 }
 
@@ -224,13 +227,15 @@ header h2 {
     padding: 2%;
     width: 100%;
 }
-#footer p a {
+#footer .link-text {
     float: right;
     text-decoration: none;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     color: var(--cream);
     margin-right: 10%;
+    font-size: clamp(18px, 100vw, 20px);
+    line-height: 30px;
 }
 
 /**** MOBILE STYLES ****/
@@ -238,10 +243,15 @@ header h2 {
 @media only screen and (max-width: 600px) {
 
     .button {
-        padding: 20px;
-        margin: 4%;
+        padding: 15px;
+        margin: 5%;
     }
-    nav ul li a {
-        padding-right: 10px;
+    nav .link-text {
+        padding-right: 0;
+        margin: 0;
     }
+    .pull-quote{
+        font-size: 40px;
+    }
+
 }
