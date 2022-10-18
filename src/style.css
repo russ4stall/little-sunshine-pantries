@@ -28,7 +28,7 @@
 
 .heading-secondary {
     color: var(--deep-indigo);
-    font-size: clamp(20px, 100vw, 40px);
+    font-size: clamp(20px, 100vw, 30px);
     font-family: 'Lora', serif;
 }
 
