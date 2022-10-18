@@ -157,6 +157,14 @@ header h2 {
     padding-top: 5%;
 }
 
+header .link-text{
+    float: left;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+    overflow-inline: hidden;
+}
+
 /***** ABOUT SECTION STYLES *****/
 
 /*#about .full-width{*/
