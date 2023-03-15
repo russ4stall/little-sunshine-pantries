@@ -49,7 +49,7 @@ p {
 
 /***** BASE STYLES *****/
 
-.button {
+button, .button {
     color: var(--cream);
     background-color: var(--smokey-indigo);
     padding: 10px;
@@ -64,7 +64,7 @@ p {
     text-decoration: none;
 }
 
-.button:hover {
+button:hover, .button:hover {
     background-color: var(--deep-indigo);
 }
 
