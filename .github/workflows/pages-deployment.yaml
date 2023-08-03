@@ -18,5 +18,5 @@ jobs:
           projectName: little-sunshine-pantries
           directory: src
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: main
           wranglerVersion: '3'
