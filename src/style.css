@@ -32,12 +32,6 @@
     font-family: 'Lora', serif;
 }
 
-/*h4 {*/
-/*    color: var(--deep-indigo);*/
-/*    font-size: clamp(20px, 100vw, 40px);*/
-/*    font-family: Poppins, sans-serif;*/
-/*}*/
-
 p {
     color: var(--smokey-indigo);
     font-size: clamp(18px, 100vw, 20px);
