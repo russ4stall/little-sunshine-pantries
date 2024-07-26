@@ -1,2 +1,9 @@
 # IDEs
 .idea
+
+# node_modules
+node_modules
+
+# compiled
+public
+.cache

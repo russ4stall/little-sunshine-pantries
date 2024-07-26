@@ -1,0 +1,38 @@
+{
+  "name": "little-sunshine-pantries",
+  "version": "1.0.0",
+  "description": "Little Sunshine Pantries website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashpinetech/little-sunshine-pantries.git"
+  },
+  "author": "Slash Pine Tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slashpinetech/little-sunshine-pantries/issues"
+  },
+  "homepage": "https://github.com/slashpinetech/little-sunshine-pantries#readme",
+  "dependencies": {
+    "gatsby": "^5.13.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.8.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
+  }
+}
