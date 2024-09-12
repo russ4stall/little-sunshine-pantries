@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         manrope: ['Manrope', 'sans-serif']
       },
+      aria: {
+        current: 'current="page"'
+      },
       colors: {
         'satin-linen': {
           50: '#f9f7f3',

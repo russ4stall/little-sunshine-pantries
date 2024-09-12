@@ -70,20 +70,10 @@ module.exports = {
     '@stylistic/jsx-indent-props': ['warn', 2],
     '@stylistic/jsx-max-props-per-line': [
       'warn',
-      {
-        maximum: {
-          single: 3,
-          multi: 1
-        }
-      }
+      { maximum: 1, when: 'multiline' }
     ],
     '@stylistic/jsx-newline': ['warn', { prevent: true }],
-    '@stylistic/jsx-one-expression-per-line': [
-      'warn',
-      {
-        allow: 'single-child'
-      }
-    ],
+    '@stylistic/jsx-one-expression-per-line': 'off',
     '@stylistic/jsx-pascal-case': ['warn', { allowNamespace: true }],
     '@stylistic/jsx-props-no-multi-spaces': 'warn',
     '@stylistic/jsx-closing-tag-location': ['warn'],
@@ -98,11 +88,23 @@ module.exports = {
     '@stylistic/linebreak-style': 'warn',
     '@stylistic/lines-around-comment': 'warn',
     '@stylistic/lines-between-class-members': 'warn',
-    '@stylistic/max-len': ['warn', { code: 120 }],
+    '@stylistic/max-len': [0],
     '@stylistic/max-statements-per-line': 'warn',
-    '@stylistic/member-delimiter-style': 'warn',
+    '@stylistic/member-delimiter-style': [
+      'warn',
+      {
+        multiline: {
+          delimiter: 'semi',
+          requireLast: true
+        },
+        singleline: {
+          delimiter: 'semi',
+          requireLast: true
+        }
+      }
+    ],
     '@stylistic/multiline-comment-style': 'warn',
-    '@stylistic/multiline-ternary': 'warn',
+    '@stylistic/multiline-ternary': ['warn', 'always-multiline'],
     '@stylistic/new-parens': 'warn',
     '@stylistic/newline-per-chained-call': 'warn',
     '@stylistic/no-confusing-arrow': 'warn',
@@ -119,7 +121,7 @@ module.exports = {
     '@stylistic/nonblock-statement-body-position': 'warn',
     '@stylistic/object-curly-newline': 'warn',
     '@stylistic/object-curly-spacing': ['warn', 'always'],
-    '@stylistic/object-property-newline': 'warn',
+    '@stylistic/object-property-newline': 'off',
     '@stylistic/one-var-declaration-per-line': 'warn',
     '@stylistic/operator-linebreak': ['warn', 'before'],
     '@stylistic/padded-blocks': ['warn', 'never'],
