@@ -21,9 +21,11 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-10">
             <div className="flex justify-center gap-5 md:justify-start">
+              {/* TODO: Add Facebook link */}
               <a className="block text-calypso-600 transition-all hover:-translate-y-1 hover:text-calypso-500" href="/">
                 <FacebookIcon className="size-10" />
               </a>
+              {/* TODO: Add Instagram link */}
               <a className="block text-calypso-600 transition-all hover:-translate-y-1 hover:text-calypso-500" href="/">
                 <InstagramIcon className="size-10" />
               </a>
