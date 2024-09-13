@@ -2,77 +2,17 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 import { Button } from '@/components/button';
-import { Heading } from '@/components/heading';
 import Layout from '@/components/layout';
 import { Seo } from '@/components/seo';
 import childHolderCarrots from '@/images/child-holder-carrots.jpeg';
 import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
 import orangeLogoMark from '@/images/orange-logo_mark@2x.png';
-import personBaggingOranges from '@/images/person-bagging-oranges.jpg';
 import PersonCarryingGroceriesSvg from '@/images/person-carrying-groceries-illustration.inline.svg';
 import Rocket from '@/images/rocket-illustration.inline.svg';
 import StateCapitalSvg from '@/images/state-capital.inline.svg';
-
-const FoodDistributedSection = () => {
-  return (
-    <section className="flex flex-col bg-pizazz-600 md:flex-row">
-      <article className="flex w-full flex-col items-center justify-center px-16 py-20 md:w-1/2 md:p-20">
-        <Heading className="text-center" level={3}>
-          <span className="mb-6 block">We distributed over</span>
-          <span className="mb-6 block text-8xl text-satin-linen-200 sm:leading-[0.75] lg:text-9xl">
-            9,497 pounds
-          </span>
-          <span className="block">of food in 2023</span>
-        </Heading>
-      </article>
-      <aside className="w-full md:w-1/2">
-        <img
-          alt="Person bagging oranges"
-          className="size-full object-cover"
-          src={personBaggingOranges}
-        />
-      </aside>
-    </section>
-  );
-};
-
-const GetInvolvedSection = () => {
-  return (
-    <section className="flex bg-satin-linen-200">
-      <article className="mx-auto flex-col px-16 py-20 md:p-20">
-        <Heading className="text-center" level={3}>
-          The 32304 zip code is home to <span className="text-calypso-600">3,713 children.</span>
-        </Heading>
-        <Heading className="max-w-3xl text-center" level={2}>
-          48.7% of them experience poverty.
-        </Heading>
-        <div className="mt-10 flex items-center justify-center">
-          <Button href="/support">
-            Get Involved
-          </Button>
-        </div>
-      </article>
-    </section>
-  );
-};
-
-const BusPassesSection = () => {
-  return (
-    <section className="flex bg-mine-shaft-950 px-16 py-20 md:p-20">
-      <article className="mx-auto max-w-3xl flex-col">
-        <Heading
-          className="relative mb-6 block text-center text-8xl text-satin-linen-200 sm:leading-[0.75] lg:text-9xl"
-          level={2}
-        >
-          73 bus passes
-        </Heading>
-        <Heading className="max-w-3xl text-center text-calypso-600" level={3}>
-          were given to those needing transportation
-        </Heading>
-      </article>
-    </section>
-  );
-};
+import familyPhoto from '@/images/family-photo.jpeg';
+import SmilingHousesIllustration from '@/images/smiling-houses-illustration.inline.svg';
+import sticker from '@/images/sticker.png';
 
 const IndexPage = () => {
   return (
@@ -199,15 +139,13 @@ const IndexPage = () => {
           </div>
           <div className="flex max-w-lg flex-col gap-12 px-4 sm:px-6 lg:px-8">
             <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
-              We distributed over
-              <br />
+              <span className="block mb-8">We distributed over</span>
               <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
                 9,497
                 <br />
                 pounds
               </em>
-              <br />
-              of food in 2023
+              <span className="block mt-6">of food in 2023</span>
             </h3>
           </div>
         </div>
@@ -243,72 +181,66 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      {/* <HeroSection />*/}
-      {/* <GroceryStoreSection />*/}
-      {/* <GetInvolvedSection />*/}
-      {/* <FoodDistributedSection />*/}
-      {/* <BusPassesSection />*/}
-      {/* <div className="flex bg-calypso-600">*/}
-      {/*  <div className="w-[50vw]">*/}
-      {/*    <img*/}
-      {/*      alt="Photo of a family"*/}
-      {/*      className="size-full object-cover"*/}
-      {/*      src={familyPhoto}*/}
-      {/*    />*/}
-      {/*  </div>*/}
-      {/*  <div className="m-auto w-[50vw] flex-col items-center justify-center sm:max-w-xl sm:p-20">*/}
-      {/*    <div className="mb-8 flex items-center justify-center">*/}
-      {/*      <SmilingHousesIllustration />*/}
-      {/*    </div>*/}
-      {/*    <h2 className="text-center text-3xl font-bold">*/}
-      {/*      <span className="mb-2 inline-block">*/}
-      {/*        Delivered*/}
-      {/*        <br />*/}
-      {/*        semi-regularly to*/}
-      {/*      </span>*/}
-      {/*      <br />*/}
-      {/*      <span className="mb-2 inline-block text-satin-linen-200 sm:text-9xl">*/}
-      {/*        12*/}
-      {/*      </span>*/}
-      {/*      <br />*/}
-      {/*      <span className="mb-6 inline-block">households</span>*/}
-      {/*      <span className="relative block text-base font-normal">*/}
-      {/*        and placed 2nd in the*/}
-      {/*        <br />*/}
-      {/*        GiveTLH awards.*/}
-      {/*        <ArrowUnderline className="absolute -bottom-2 left-[24%] w-40" />*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*  </div>*/}
-      {/* </div>*/}
-      {/* <div className="relative flex bg-satin-linen-200 p-36">*/}
-      {/*  <div className="absolute -top-12 right-12">*/}
-      {/*    <img alt="brand sticker" className="w-60" src={sticker} />*/}
-      {/*  </div>*/}
-      {/*  <div className="flex-col sm:max-w-lg">*/}
-      {/*    <h2 className="mb-12 sm:text-6xl sm:leading-tight">*/}
-      {/*      Check out our interactive map to locate*/}
-      {/*      {' '}*/}
-      {/*      <span className="relative">*/}
-      {/*        free food*/}
-      {/*        <FreeFoodUnderline className="absolute inset-x-0 bottom-0" />*/}
-      {/*      </span>*/}
-      {/*    </h2>*/}
-      {/*    <div className="flex items-center justify-center">*/}
-      {/*      <Link*/}
-      {/*        className="*/}
-      {/*            flex items-center justify-center*/}
-      {/*            rounded bg-pizazz-600 px-5 py-3*/}
-      {/*            font-normal uppercase tracking-widest transition-all*/}
-      {/*            hover:-translate-y-1 hover:bg-pizazz-500 active:bg-pizazz-600*/}
-      {/*          "*/}
-      {/*        to="/support"*/}
-      {/*      >*/}
-      {/*        View Map*/}
-      {/*      </Link>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/* </div>*/}
+      <section className="flex flex-col bg-calypso-600 lg:max-h-[50rem] lg:flex-row">
+        <div className="flex items-center justify-center lg:flex-[0_0_50%]">
+          <img
+            alt="family on couch taking a candid family photo"
+            className="size-full object-cover"
+            src={familyPhoto}
+          />
+        </div>
+        <div className="flex items-center justify-center lg:flex-[0_0_50%] ">
+          <div className="flex max-w-lg flex-col gap-12 px-4 py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-64">
+              <SmilingHousesIllustration className="w-full" />
+            </div>
+            <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
+              <span className="mb-8 block">delivered semi-regularly to</span>
+              <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
+                12
+              </em>
+              <span className="mt-6 block">households</span>
+            </h3>
+            <p className="text-center font-semibold mx-auto">
+              <span className="block">and placed 2nd in the</span>
+              <em className="relative not-italic flex flex-col items-center justify-end">
+                <svg className="absolute -bottom-3 -left-16 fill-satin-linen-200" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 294.44 99.92">
+                  <path
+                    d="M293.16,96.5c-12.92-2.64-25.96-4.66-39.02-6.54-12.92-1.86-25.88-3.46-38.87-4.72-26.02-2.51-52.24-3.61-78.36-2.38-7.37.35-14.73.87-22.08,1.59-7.27.71-14.72,1.5-21.83,3.24-1.25.31-1.01,2.34.31,2.27,6.45-.34,12.9-1.2,19.34-1.77,6.46-.57,12.92-1.06,19.4-1.38,12.96-.64,25.95-.76,38.91-.43,26.03.67,52,3.16,77.78,6.74,14.53,2.02,28.98,4.54,43.48,6.76.95.15,1.88-.24,2.16-1.23.25-.87-.3-1.97-1.23-2.16Z" />
+                  <path
+                    d="M80.05,79.2c-1.86-2.42-3.76-4.83-5.69-7.19-.97-1.18-2.01-2.3-3.03-3.43-.92-1.02-1.82-2.35-3.11-2.91-.35-.15-.66.09-.61.47.21,1.4,1.26,2.61,2.02,3.76.8,1.22,1.58,2.45,2.42,3.64.62.87,1.25,1.72,1.89,2.58-7.65.36-15.36-3.14-21.99-6.54-6.38-3.27-12.41-7.22-17.88-11.86-11.02-9.35-19.92-21.08-25.81-34.3C4.97,16.02,2.9,8.14.89.32.76-.17-.01-.07,0,.44c.08,3.78.57,7.38,1.46,11.05.89,3.66,2.1,7.25,3.49,10.74,2.77,6.96,6.32,13.58,10.64,19.7,8.62,12.2,20.05,22.63,33.4,29.45,3.85,1.97,7.85,3.68,11.97,5.01,4.63,1.49,9.47,2.46,14.24,1.4.39.52.79,1.04,1.19,1.56-2.24.98-4.48,1.98-6.7,3-1.38.63-2.75,1.27-4.11,1.93-1.27.61-2.86,1.22-3.78,2.32-.62.75-.28,2.16.87,2.09,1.45-.09,2.84-.9,4.11-1.53,1.42-.71,2.84-1.4,4.26-2.08,2.79-1.33,5.62-2.59,8.47-3.81.69-.3,1-1.48.54-2.07Z" />
+                </svg>
+                <span className="relative inline-block">GiveTLH awards.</span>
+              </em>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-satin-linen-200 flex flex-col-reverse md:flex-row py-14 sm:py-20">
+        <div className="relative mx-auto flex flex-col max-w-7xl gap-20 px-4 py-20 sm:px-6 lg:px-8">
+          <div className="flex max-w-2xl">
+            <h2 className="text-5xl font-semibold sm:text-7xl">
+              check out our interactive map to locate
+              {' '}
+              <em className="relative not-italic inline-flex flex-col items-center justify-end">
+                <svg className="absolute -bottom-3 fill-calypso-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.62 19.73">
+                  <path
+                    d="M446.41,10.83C389.61,3.56,331.13.56,272.79.07c-58.52-.49-116.98,1.53-174.88,6.08-16.03,1.26-31.97,2.78-47.95,4.18-7.86.69-15.73,1.3-23.62,1.83-3.95.27-7.92.51-11.89.7-2.14.1-4.28.21-6.42.35-2.68.17-4.28.89-6.35,1.71-2.14.85-2.33,2.38,0,3.2,1.47.52,3,1.17,4.74,1.43,1.89.28,4.25.15,6.2.13,3.66-.04,7.33-.16,10.98-.29,7.32-.26,14.61-.69,21.88-1.18,14.93-1.01,29.78-2.3,44.68-3.45,27.65-2.15,56.6-3.72,85.06-4.78,57.74-2.15,115.51-1.61,173.2.62,32.32,1.25,64.59,3.06,96.79,5,5.13.31,6.13-4.13,1.21-4.76Z"
+                  />
+                </svg>
+                <span>free food</span>
+              </em>
+            </h2>
+          </div>
+          <div className="flex items-center justify-center">
+            <Button>view map</Button>
+          </div>
+        </div>
+        <div className="relative -mt-32 max-w-4xl mx-auto mr-10">
+          <img className="w-48" src={sticker} alt="Little Sunshine Pantries sticker logo" />
+        </div>
+      </section>
     </Layout>
   );
 };
