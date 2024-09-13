@@ -153,7 +153,21 @@ const IndexPage = () => {
               <em className="not-italic text-calypso-600">3,713 children.</em>
             </h3>
             <h2 className="text-center text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl">
-              <em>48.7%</em>
+              <em className="relative inline-flex items-end justify-center not-italic">
+                <motion.svg className="absolute -bottom-2" viewBox="0 0 403.34 34.58" xmlns="http://www.w3.org/2000/svg">
+                  <motion.path
+                    className="fill-transparent stroke-calypso-600 stroke-[7]"
+                    d="M3.92,23.71s-11.79,7.86,89.93-1.47c101.72-9.33,280.6,6.88,304.68,7.86S107.61,15.85,57.97,13.88s228.51-24.08,323.36,2.95c0,0-274.21,5.9-323.36,14.25"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+                    viewport={{ once: true }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                  />
+                </motion.svg>
+                <span className="relative">48.7%</span>
+              </em>
               {' '}
               of them experience poverty.
             </h2>
