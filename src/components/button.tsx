@@ -6,7 +6,7 @@ import { Link } from '@/components/link';
 const styles = {
   base: [
     'relative isolate inline-flex items-center justify-center gap-x-2 rounded border text-base/6 tracking-widest font-semibold uppercase',
-    'px-5 py-3',
+    'px-4 py-2',
     'focus:outline-none data-[focus]:outline focus:outline-2 focus:outline-offset-2 focus:outline-blue-500',
     'disabled:opacity-50'
   ],

@@ -1,63 +1,14 @@
-import { Link } from 'gatsby';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import { Button } from '@/components/button';
 import { Heading } from '@/components/heading';
 import Layout from '@/components/layout';
-import ArrowUnderline from '@/images/arrow-underline.inline.svg';
-import familyPhoto from '@/images/family-photo.jpg';
-import FreeFoodUnderline from '@/images/free-food-underline.inline.svg';
-import HeroCircle from '@/images/hero-circle.inline.svg';
-import HeroUnderline from '@/images/hero-underline.inline.svg';
+import { Seo } from '@/components/seo';
+import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
 import orangeLogoMark from '@/images/orange-logo_mark@2x.png';
 import personBaggingOranges from '@/images/person-bagging-oranges.jpg';
-import PersonCarryingGroceriesIllustration from '@/images/person-carrying-groceries-illustration.inline.svg';
-import PovertyPercentUnderline from '@/images/poverty-percent-underline.inline.svg';
-import RocketIllustration from '@/images/rocket-illustration.inline.svg';
-import SmilingHousesIllustration from '@/images/smiling-houses-illustration.inline.svg';
-import StateCapital from '@/images/state-capital.inline.svg';
-import sticker from '@/images/sticker.png';
-import youngPersonHoldingOranges from '@/images/young-person-holding-oranges.jpg';
-import { Seo } from '@/components/seo';
-
-const HeroSection = () => {
-  return (
-    <section className="flex bg-satin-linen-200 px-7 py-10 pb-20 md:p-14 md:pb-28">
-      <article className="container mx-auto">
-        <Heading className="max-w-4xl" level={1}>
-          Bringing joy through unconditional generosity and working to normalize giving from abundance.
-        </Heading>
-      </article>
-    </section>
-  );
-};
-
-const GroceryStoreSection = () => {
-  return (
-    <section className="flex flex-col bg-mine-shaft-950 md:flex-row">
-      <aside className="w-full md:w-1/2">
-        <img
-          alt="Young person holding oranges"
-          className="size-full object-cover"
-          src={youngPersonHoldingOranges}
-        />
-      </aside>
-      <article className="m-auto w-full flex-1 items-center justify-center p-14 md:w-1/2 md:p-20">
-        <div className="flex justify-center">
-          <StateCapital className="h-auto w-40" />
-        </div>
-        <Heading className="mb-16 mt-10 text-center text-satin-linen-200" level={3}>
-          We're creating Tallahassee's first free grocery store
-        </Heading>
-        <div className="flex items-center justify-center">
-          <Button href="/support">
-            Learn More
-          </Button>
-        </div>
-      </article>
-    </section>
-  );
-};
+import StateCapitalSvg from '@/images/state-capital.inline.svg';
 
 const FoodDistributedSection = () => {
   return (
@@ -117,19 +68,88 @@ const BusPassesSection = () => {
         </Heading>
       </article>
     </section>
-  )
-}
+  );
+};
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div />
-      {/*<HeroSection />*/}
-      {/*<GroceryStoreSection />*/}
-      {/*<GetInvolvedSection />*/}
-      {/*<FoodDistributedSection />*/}
-      {/*<BusPassesSection />*/}
-      {/*<div className="flex bg-calypso-600">*/}
+      <section className="bg-satin-linen-200 pb-14 pt-10 sm:pb-20 sm:pt-32 lg:pb-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl lg:text-7xl">
+              Bringing joy through
+              {' '}
+              <em className="relative inline-flex items-center justify-center not-italic">
+                <motion.svg className="absolute inset-0" viewBox="0 0 943.08 147.29" xmlns="http://www.w3.org/2000/svg">
+                  <motion.path
+                    className="fill-transparent stroke-pizazz-600 stroke-[4]"
+                    d="M941.08,70.92s-98.61,36.17-305.15,37.19S23.39,144.56,3.15,84.82C-17.09,25.08,232.24,17.36,485.36,6.22s385.57-2.26,388.5,51.27c2.65,48.28-82.01,94.16-258.18,87.07S8.21,128.36,21.37,79.76C34.53,31.16,527.6-4.27,811.09,29.14"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+                    viewport={{ once: true }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                  />
+                </motion.svg>
+                <span className="relative">unconditional</span>
+              </em>
+              {' '}
+              generosity and
+              working to normalize giving
+              {' '}
+              <em className="relative inline-flex items-end justify-center not-italic">
+                <motion.svg className="absolute -bottom-5" viewBox="0 0 796.76 21.48" xmlns="http://www.w3.org/2000/svg">
+                  <motion.path
+                    className="fill-transparent stroke-pizazz-600 stroke-[4]"
+                    d="M2,16.44s447.51-34.42,792.76,3.04"
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    transition={{ duration: 1, ease: 'easeInOut', delay: 0.2 }}
+                    viewport={{ once: true }}
+                    whileInView={{ pathLength: 1, opacity: 1 }}
+                  />
+                </motion.svg>
+                <span className="relative">
+                  from abundance.
+                  {' '}
+                  <img
+                    alt="Little Sunshine Pantries orange logo mark."
+                    className="absolute -right-9 top-0 w-7 sm:-right-10 sm:w-9 md:-right-12 md:w-11 lg:w-12"
+                    src={orangeLogoMark}
+                  />
+                </span>
+              </em>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col bg-mine-shaft-950 lg:max-h-[50rem] lg:flex-row">
+        <div className="flex items-center justify-center lg:flex-[0_0_50%]">
+          <img alt="young person holding vegetables" className="size-full object-cover" src={youngPersonHoldingVegetables} />
+        </div>
+        <div className="flex items-center justify-center lg:flex-[0_0_50%] ">
+          <div className="flex max-w-lg flex-col gap-12 px-4 py-10 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-52">
+              <StateCapitalSvg className="w-full" />
+            </div>
+            <h2 className="text-center text-3xl font-extrabold text-satin-linen-200">
+              We're creating Tallahassee's first free grocery store
+            </h2>
+            <div className="flex items-center justify-center">
+              <Button>Learn More</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <HeroSection />*/}
+      {/* <GroceryStoreSection />*/}
+      {/* <GetInvolvedSection />*/}
+      {/* <FoodDistributedSection />*/}
+      {/* <BusPassesSection />*/}
+      {/* <div className="flex bg-calypso-600">*/}
       {/*  <div className="w-[50vw]">*/}
       {/*    <img*/}
       {/*      alt="Photo of a family"*/}
@@ -161,8 +181,8 @@ const IndexPage = () => {
       {/*      </span>*/}
       {/*    </h2>*/}
       {/*  </div>*/}
-      {/*</div>*/}
-      {/*<div className="relative flex bg-satin-linen-200 p-36">*/}
+      {/* </div>*/}
+      {/* <div className="relative flex bg-satin-linen-200 p-36">*/}
       {/*  <div className="absolute -top-12 right-12">*/}
       {/*    <img alt="brand sticker" className="w-60" src={sticker} />*/}
       {/*  </div>*/}
@@ -189,7 +209,7 @@ const IndexPage = () => {
       {/*      </Link>*/}
       {/*    </div>*/}
       {/*  </div>*/}
-      {/*</div>*/}
+      {/* </div>*/}
     </Layout>
   );
 };
