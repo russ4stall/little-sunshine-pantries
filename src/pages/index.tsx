@@ -135,12 +135,31 @@ const IndexPage = () => {
             <div className="mx-auto max-w-52">
               <StateCapitalSvg className="w-full" />
             </div>
-            <h2 className="text-center text-3xl font-extrabold text-satin-linen-200">
+            <h3 className="text-center text-3xl font-extrabold text-satin-linen-200">
               We're creating Tallahassee's first free grocery store
-            </h2>
+            </h3>
             <div className="flex items-center justify-center">
               <Button>Learn More</Button>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-satin-linen-200 pb-14 pt-10 sm:pb-20 sm:pt-32 lg:pb-32">
+        <div className="mx-auto flex max-w-7xl flex-col gap-20 px-4 py-20 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-center text-3xl font-extrabold">
+              The 32304 zip code is home to
+              {' '}
+              <em className="not-italic text-calypso-600">3,713 children.</em>
+            </h3>
+            <h2 className="text-center text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl">
+              <em>48.7%</em>
+              {' '}
+              of them experience poverty.
+            </h2>
+          </div>
+          <div className="flex items-center justify-center">
+            <Button>Get Involved</Button>
           </div>
         </div>
       </section>
