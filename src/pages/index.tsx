@@ -5,12 +5,13 @@ import { Button } from '@/components/button';
 import { Heading } from '@/components/heading';
 import Layout from '@/components/layout';
 import { Seo } from '@/components/seo';
-import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
 import childHolderCarrots from '@/images/child-holder-carrots.jpeg';
+import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
 import orangeLogoMark from '@/images/orange-logo_mark@2x.png';
 import personBaggingOranges from '@/images/person-bagging-oranges.jpg';
-import StateCapitalSvg from '@/images/state-capital.inline.svg';
 import PersonCarryingGroceriesSvg from '@/images/person-carrying-groceries-illustration.inline.svg';
+import Rocket from '@/images/rocket-illustration.inline.svg';
+import StateCapitalSvg from '@/images/state-capital.inline.svg';
 
 const FoodDistributedSection = () => {
   return (
@@ -193,14 +194,14 @@ const IndexPage = () => {
       </section>
       <section className="flex flex-col-reverse bg-pizazz-600 lg:max-h-[50rem] lg:flex-row">
         <div className="relative flex flex-col items-center justify-center gap-10 py-20 lg:flex-[0_0_50%]">
-          <div className="relative lg:z-10 lg:absolute lg:-right-16 lg:top-10">
+          <div className="relative lg:absolute lg:-right-16 lg:top-10 lg:z-10">
             <PersonCarryingGroceriesSvg className="w-36" />
           </div>
           <div className="flex max-w-lg flex-col gap-12 px-4 sm:px-6 lg:px-8">
             <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
               We distributed over
               <br />
-              <em className="text-7xl not-italic text-satin-linen-200 sm:text-9xl">
+              <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
                 9,497
                 <br />
                 pounds
@@ -217,6 +218,28 @@ const IndexPage = () => {
               className="size-full object-cover object-center"
               src={childHolderCarrots}
             />
+          </div>
+        </div>
+      </section>
+      <section className="bg-mine-shaft-950 py-14 sm:py-20">
+        <div className="mx-auto flex max-w-7xl flex-col gap-20 px-4 py-20 sm:px-6 lg:px-8">
+          <div className="relative mx-auto flex max-w-2xl flex-col gap-4">
+            <div className="flex items-center justify-center lg:absolute lg:-left-36 lg:top-10">
+              <Rocket className="w-48" />
+            </div>
+            <h3 className="relative flex flex-col gap-2 text-center text-3xl font-extrabold text-calypso-600">
+              <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
+                73 bus
+                <br />
+                passes
+              </em>
+              <br />
+              <span>
+                were given to those
+                <br />
+                needing transportation
+              </span>
+            </h3>
           </div>
         </div>
       </section>
