@@ -11,7 +11,7 @@ const FindFood = () => {
     <Layout>
       <section className="container mx-auto grid max-w-7xl grid-cols-1 justify-center gap-14 px-4 pb-10 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div className="flex items-center justify-center">
-          <img alt="Little Sunshine Pantry" className="w-full max-w-3xl" src={pantry} />
+          <img alt="A Little Sunshine Pantry" className="w-full max-w-3xl" src={pantry} />
         </div>
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-center font-semibold">
@@ -19,7 +19,8 @@ const FindFood = () => {
             it the most by regularly stocking
             <br />
             <em
-              className="relative my-6 inline-flex items-center justify-center text-6xl font-extrabold not-italic sm:text-7xl">
+              className="relative my-6 inline-flex items-center justify-center text-6xl font-extrabold not-italic sm:text-7xl"
+            >
               <span className="z-10">19 Pantries</span>
               <svg className="absolute z-0" fill="none" viewBox="0 0 765.54 158.5" xmlns="http://www.w3.org/2000/svg">
                 <motion.path

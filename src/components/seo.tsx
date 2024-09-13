@@ -16,8 +16,8 @@ export const Seo = ({
 }: SeoProps) => {
   return (
     <>
-      <html className="h-full scroll-smooth bg-satin-linen-200 antialiased" lang="en" />
-      <body className="flex h-full flex-col" />
+      <html className="h-full overflow-x-hidden scroll-smooth bg-satin-linen-200 antialiased" lang="en" />
+      <body className="flex h-full flex-col overflow-x-hidden" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
       <meta content={description ?? defaultDescription} name="description" />

@@ -5,7 +5,7 @@ import { Link } from '@/components/link';
 
 const styles = {
   base: [
-    'relative isolate inline-flex items-center justify-center gap-x-2 rounded border text-base/6 tracking-widest font-semibold',
+    'relative isolate inline-flex items-center justify-center gap-x-2 rounded border text-base/6 tracking-widest font-semibold uppercase',
     'px-5 py-3',
     'focus:outline-none data-[focus]:outline focus:outline-2 focus:outline-offset-2 focus:outline-blue-500',
     'disabled:opacity-50'
@@ -21,6 +21,14 @@ const styles = {
     pizazz: [
       'text-mine-shaft-950 [--btn-bg:theme(colors.pizazz.600)] [--btn-border:theme(colors.pizazz.600/90%)] [--btn-hover-overlay:theme(colors.white/10%)]',
       'active:[--btn-icon:theme(colors.pizazz.600)] hover:[--btn-icon:theme(colors.pizazz.500)]'
+    ],
+    calypso: [
+      'text-mine-shaft-950 [--btn-bg:theme(colors.calypso.600)] [--btn-border:theme(colors.calypso.600/90%)] [--btn-hover-overlay:theme(colors.white/10%)]',
+      'active:[--btn-icon:theme(colors.calypso.600)] hover:[--btn-icon:theme(colors.calypso.500)]'
+    ],
+    'satin-linen': [
+      'text-mine-shaft-950 [--btn-bg:theme(colors.satin-linen.200)] [--btn-border:theme(colors.satin-linen.200/90%)] [--btn-hover-overlay:theme(colors.mine-shaft.950/10%)]',
+      'active:[--btn-icon:theme(colors.satin-linen.200)] hover:[--btn-icon:theme(colors.satin-linen.100)]'
     ]
   }
 };
@@ -28,13 +36,13 @@ const styles = {
 type ButtonProps = (
   | { color?: keyof typeof styles.colors; }
 ) & { className?: string; children: React.ReactNode; } & (
-  | Omit<HTMLButtonElement, 'as' | 'className'>
+  | React.ButtonHTMLAttributes<HTMLButtonElement>
   | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'className'>
 );
 
 export const Button = forwardRef((
   { color = 'pizazz', children, className, ...props }: ButtonProps,
-  ref?: React.Ref<HTMLButtonElement>
+  ref: React.Ref<HTMLElement>
 ) => {
   const classes = clsx(
     styles.base,
@@ -45,5 +53,5 @@ export const Button = forwardRef((
 
   return 'href' in props
     ? <Link {...props} className={classes} ref={ref as React.ForwardedRef<HTMLAnchorElement>}>{children}</Link>
-    : <button {...props as object} className={clsx(classes, 'cursor-default')} ref={ref}>{children}</button>;
+    : <button {...props as object} className={clsx(classes, 'cursor-default')} ref={ref as React.ForwardedRef<HTMLButtonElement>}>{children}</button>;
 });
