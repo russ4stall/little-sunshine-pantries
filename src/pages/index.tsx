@@ -6,9 +6,11 @@ import { Heading } from '@/components/heading';
 import Layout from '@/components/layout';
 import { Seo } from '@/components/seo';
 import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
+import childHolderCarrots from '@/images/child-holder-carrots.jpeg';
 import orangeLogoMark from '@/images/orange-logo_mark@2x.png';
 import personBaggingOranges from '@/images/person-bagging-oranges.jpg';
 import StateCapitalSvg from '@/images/state-capital.inline.svg';
+import PersonCarryingGroceriesSvg from '@/images/person-carrying-groceries-illustration.inline.svg';
 
 const FoodDistributedSection = () => {
   return (
@@ -100,7 +102,11 @@ const IndexPage = () => {
               working to normalize giving
               {' '}
               <em className="relative inline-flex items-end justify-center not-italic">
-                <motion.svg className="absolute -bottom-5" viewBox="0 0 796.76 21.48" xmlns="http://www.w3.org/2000/svg">
+                <motion.svg
+                  className="absolute -bottom-5"
+                  viewBox="0 0 796.76 21.48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <motion.path
                     className="fill-transparent stroke-pizazz-600 stroke-[4]"
                     d="M2,16.44s447.51-34.42,792.76,3.04"
@@ -128,10 +134,14 @@ const IndexPage = () => {
       </section>
       <section className="flex flex-col bg-mine-shaft-950 lg:max-h-[50rem] lg:flex-row">
         <div className="flex items-center justify-center lg:flex-[0_0_50%]">
-          <img alt="young person holding vegetables" className="size-full object-cover" src={youngPersonHoldingVegetables} />
+          <img
+            alt="young person holding vegetables"
+            className="size-full object-cover"
+            src={youngPersonHoldingVegetables}
+          />
         </div>
         <div className="flex items-center justify-center lg:flex-[0_0_50%] ">
-          <div className="flex max-w-lg flex-col gap-12 px-4 py-10 sm:px-6 lg:px-8">
+          <div className="flex max-w-lg flex-col gap-12 px-4 py-20 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-52">
               <StateCapitalSvg className="w-full" />
             </div>
@@ -144,7 +154,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-satin-linen-200 pb-14 pt-10 sm:pb-20 sm:pt-32 lg:pb-32">
+      <section className="bg-satin-linen-200 py-14 sm:py-20">
         <div className="mx-auto flex max-w-7xl flex-col gap-20 px-4 py-20 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4">
             <h3 className="text-center text-3xl font-extrabold">
@@ -154,7 +164,11 @@ const IndexPage = () => {
             </h3>
             <h2 className="text-center text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl">
               <em className="relative inline-flex items-end justify-center not-italic">
-                <motion.svg className="absolute -bottom-2" viewBox="0 0 403.34 34.58" xmlns="http://www.w3.org/2000/svg">
+                <motion.svg
+                  className="absolute -bottom-2"
+                  viewBox="0 0 403.34 34.58"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <motion.path
                     className="fill-transparent stroke-calypso-600 stroke-[7]"
                     d="M3.92,23.71s-11.79,7.86,89.93-1.47c101.72-9.33,280.6,6.88,304.68,7.86S107.61,15.85,57.97,13.88s228.51-24.08,323.36,2.95c0,0-274.21,5.9-323.36,14.25"
@@ -174,6 +188,35 @@ const IndexPage = () => {
           </div>
           <div className="flex items-center justify-center">
             <Button>Get Involved</Button>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col-reverse bg-pizazz-600 lg:max-h-[50rem] lg:flex-row">
+        <div className="relative flex flex-col items-center justify-center gap-10 py-20 lg:flex-[0_0_50%]">
+          <div className="relative lg:z-10 lg:absolute lg:-right-16 lg:top-10">
+            <PersonCarryingGroceriesSvg className="w-36" />
+          </div>
+          <div className="flex max-w-lg flex-col gap-12 px-4 sm:px-6 lg:px-8">
+            <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
+              We distributed over
+              <br />
+              <em className="text-7xl not-italic text-satin-linen-200 sm:text-9xl">
+                9,497
+                <br />
+                pounds
+              </em>
+              <br />
+              of food in 2023
+            </h3>
+          </div>
+        </div>
+        <div className="flex items-center justify-center lg:flex-[0_0_50%]">
+          <div className="aspect-h-1 aspect-w-1 size-full">
+            <img
+              alt="young person holding vegetables"
+              className="size-full object-cover object-center"
+              src={childHolderCarrots}
+            />
           </div>
         </div>
       </section>
