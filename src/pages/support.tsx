@@ -51,8 +51,8 @@ const Support = () => {
                 </em>
               </h2>
               <div className="flex items-center gap-10">
-                <Button color="calypso" href="#">Paypal</Button>
-                <Button color="calypso" href="#">Venmo</Button>
+                <Button color="calypso" href="https://www.paypal.com/donate/?hosted_button_id=Z9V9GXBFBSRJJ">Paypal</Button>
+                <Button color="calypso" href="https://account.venmo.com/u/sunshine_pantries">Venmo</Button>
               </div>
             </div>
             <div className="-mb-12 flex flex-col items-center justify-center">
@@ -120,9 +120,9 @@ const Support = () => {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <Button color="satin-linen">PayPal</Button>
-            <Button color="satin-linen">Venmo</Button>
-            <Button color="satin-linen"><span className="whitespace-nowrap">Amazon Wishlist</span></Button>
+            <Button color="satin-linen" href="https://www.paypal.com/donate/?hosted_button_id=Z9V9GXBFBSRJJ">PayPal</Button>
+            <Button color="satin-linen" href="https://account.venmo.com/u/sunshine_pantries">Venmo</Button>
+            <Button color="satin-linen" href="https://www.amazon.com/hz/wishlist/ls/2JR201AT70B6Q/ref=hz_ls_biz_ex"><span className="whitespace-nowrap">Amazon Wishlist</span></Button>
           </div>
         </div>
         <div className="lg:flex-[0_0_50%]">
@@ -159,7 +159,7 @@ const Support = () => {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <Button color="pizazz">Get Started</Button>
+            <Button color="pizazz" href="mailto:littlesunshinepantries@gmail.com?subject=I'd like to partner with you!&body=Hello, I'd like to become a partner by...">Get Started</Button>
           </div>
         </div>
       </section>

@@ -90,7 +90,7 @@ const IndexPage = () => {
               We're creating Tallahassee's first free grocery store
             </h3>
             <div className="flex items-center justify-center">
-              <Button>Learn More</Button>
+              <Button onClick={() => alert("Do we have some materials on this? A  PDF or something?")}>Learn More</Button>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ const IndexPage = () => {
             </h2>
           </div>
           <div className="flex items-center justify-center">
-            <Button>Get Involved</Button>
+            <Button href="/support">Get Involved</Button>
           </div>
         </div>
       </section>
@@ -149,7 +149,7 @@ const IndexPage = () => {
             </h3>
           </div>
         </div>
-        <div className="flex items-center justify-center lg:flex-[0_0_50%]">
+        <div className="flex items-center justify-center lg:flex-[0_0_50%] overflow-hidden">
           <div className="aspect-h-1 aspect-w-1 size-full">
             <img
               alt="young person holding vegetables"
@@ -234,7 +234,7 @@ const IndexPage = () => {
             </h2>
           </div>
           <div className="flex items-center justify-center">
-            <Button>view map</Button>
+              <Button href="/find-food">view map</Button>
           </div>
         </div>
         <div className="relative -mt-32 max-w-4xl mx-auto mr-10">
