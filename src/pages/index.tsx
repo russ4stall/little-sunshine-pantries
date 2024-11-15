@@ -90,7 +90,7 @@ const IndexPage = () => {
               We're creating Tallahassee's first free grocery store
             </h3>
             <div className="flex items-center justify-center">
-              <Button onClick={() => alert("Do we have some materials on this? A  PDF or something?")}>Learn More</Button>
+              <Button href="mailto:littlesunshinepantries@gmail.com?subject=I'd like to learn more about the free grocery store!">Learn More</Button>
             </div>
           </div>
         </div>
