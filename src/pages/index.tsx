@@ -4,13 +4,13 @@ import React from 'react';
 import { Button } from '@/components/button';
 import Layout from '@/components/layout';
 import { Seo } from '@/components/seo';
-import childHolderCarrots from '@/images/child-holder-carrots.jpeg';
-import youngPersonHoldingVegetables from '@/images/girl-with-oranges.jpeg';
+import babyFruit from '@/images/baby-holding-fruit.jpg';
+import jackSparrow from '@/images/jack-sparrow.jpg';
+import storeFrontWorker from '@/images/storefront-worker.jpg';
 import orangeLogoMark from '@/images/orange-logo_mark@2x.png';
 import PersonCarryingGroceriesSvg from '@/images/person-carrying-groceries-illustration.inline.svg';
 import Rocket from '@/images/rocket-illustration.inline.svg';
 import StateCapitalSvg from '@/images/state-capital.inline.svg';
-import familyPhoto from '@/images/family-photo.jpeg';
 import SmilingHousesIllustration from '@/images/smiling-houses-illustration.inline.svg';
 import sticker from '@/images/sticker.png';
 
@@ -78,7 +78,7 @@ const IndexPage = () => {
           <img
             alt="young person holding vegetables"
             className="size-full object-cover"
-            src={youngPersonHoldingVegetables}
+            src={storeFrontWorker}
           />
         </div>
         <div className="flex items-center justify-center lg:flex-[0_0_50%] ">
@@ -154,7 +154,7 @@ const IndexPage = () => {
             <img
               alt="young person holding vegetables"
               className="size-full object-cover object-center"
-              src={childHolderCarrots}
+              src={jackSparrow}
             />
           </div>
         </div>
@@ -186,7 +186,7 @@ const IndexPage = () => {
           <img
             alt="family on couch taking a candid family photo"
             className="size-full object-cover"
-            src={familyPhoto}
+            src={babyFruit}
           />
         </div>
         <div className="flex items-center justify-center lg:flex-[0_0_50%] ">
