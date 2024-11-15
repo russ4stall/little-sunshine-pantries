@@ -51,8 +51,7 @@ const Support = () => {
                 </em>
               </h2>
               <div className="flex items-center gap-10">
-                <Button color="calypso" href="https://www.paypal.com/donate/?hosted_button_id=Z9V9GXBFBSRJJ">Paypal</Button>
-                <Button color="calypso" href="https://account.venmo.com/u/sunshine_pantries">Venmo</Button>
+                <Button color="calypso" href="mailto:littlesunshinepantries@gmail.com?subject=I'd like to learn more about the free grcoery store!">Get In Touch</Button>
               </div>
             </div>
             <div className="-mb-12 flex flex-col items-center justify-center">
