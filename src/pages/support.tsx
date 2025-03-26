@@ -51,7 +51,7 @@ const Support = () => {
                 </em>
               </h2>
               <div className="flex items-center gap-10">
-                <Button color="calypso" href="mailto:littlesunshinepantries@gmail.com?subject=I'd like to learn more about the free grocery store!">Get In Touch</Button>
+                <Button color="calypso" href="mailto:sunshinepantries@gmail.com?subject=I'd like to learn more about the free grocery store!">Get In Touch</Button>
               </div>
             </div>
             <div className="-mb-12 flex flex-col items-center justify-center">
@@ -158,7 +158,7 @@ const Support = () => {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <Button color="pizazz" href="mailto:littlesunshinepantries@gmail.com?subject=I'd like to partner with you!&body=Hello, I'd like to become a partner by...">Get Started</Button>
+            <Button color="pizazz" href="mailto:sunshinepantries@gmail.com?subject=I'd like to partner with you!&body=Hello, I'd like to become a partner by...">Get Started</Button>
           </div>
         </div>
       </section>
