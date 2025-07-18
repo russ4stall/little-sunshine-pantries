@@ -66,7 +66,7 @@ const Support = () => {
       </section>
       <section className="flex flex-col-reverse bg-calypso-600 lg:max-h-[50rem] lg:flex-row">
         <div className="mx-auto flex max-w-xl flex-col justify-center px-4 py-20 sm:px-6 lg:flex-[0_0_50%] lg:px-8">
-          <h2 className="text-8xl font-extrabold text-satin-linen-200">
+          <h2 className="text-8xl font-extrabold text-satin-linen-200" id="food-pantries">
             Food
             <br />
             pantries
