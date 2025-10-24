@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="flex-col text-center md:text-left">
               <p className="text-base/6 text-calypso-600">
-                contact: <a href="mailto:sunshinepantries@gmail.com">sunshinepantries@gmail.com</a>
+                contact: <a href="mailto:needfood@littlesunshinepantries.com">needfood@littlesunshinepantries.com</a>
               </p>
               <p className="text-calypso-600">
                 © 2021–2024 Little Sunshine Pantries
