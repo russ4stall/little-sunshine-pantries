@@ -51,7 +51,8 @@ const FindFood = () => {
             className="absolute inset-0 size-full"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/d/embed?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ehbc=2E312F"
+            //src="https://www.google.com/maps/d/embed?mid=1eyqlWLBNSbgttezWEknxRtNImOabGsZU&ehbc=2E312F"
+            src="https://www.google.com/maps/d/embed?mid=1Og27myo25yoYzd6CvzZ4VMS8Tsdnvv8&z=12"
           />
         </div>
         <div className="hidden w-56 md:block">
