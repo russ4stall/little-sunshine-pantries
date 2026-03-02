@@ -141,11 +141,11 @@ const IndexPage = () => {
             <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
               <span className="block mb-8">We distributed over</span>
               <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
-                9,497
+                23,245
                 <br />
                 pounds
               </em>
-              <span className="block mt-6">of food in 2023</span>
+              <span className="block mt-6">of food in 2025</span>
             </h3>
           </div>
         </div>
@@ -167,7 +167,7 @@ const IndexPage = () => {
             </div>
             <h3 className="relative flex flex-col gap-2 text-center text-3xl font-extrabold text-calypso-600">
               <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
-                73 bus
+                205 bus
                 <br />
                 passes
               </em>
@@ -195,9 +195,9 @@ const IndexPage = () => {
               <SmilingHousesIllustration className="w-full" />
             </div>
             <h3 className="text-center text-3xl font-extrabold text-mine-shaft-950">
-              <span className="mb-8 block">delivered semi-regularly to</span>
+              <span className="mb-8 block">delivered weekly to</span>
               <em className="text-7xl/[0.75] font-extrabold not-italic text-satin-linen-200 sm:text-9xl/[0.75]">
-                12
+                20
               </em>
               <span className="mt-6 block">households</span>
             </h3>
