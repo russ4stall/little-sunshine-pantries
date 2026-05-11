@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/request-food-delivery",
+      "destination": "https://airtable.com/appX16lmy5hv0Qto5/paglVGoWgVtVO7v5T/form",
+      "permanent": true
+    }
+  ]
+}
