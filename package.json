@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slashpinetech/little-sunshine-pantries.git"
+    "url": "git+https://github.com/russ4stall/little-sunshine-pantries.git"
   },
   "author": "Slash Pine Tech",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/slashpinetech/little-sunshine-pantries/issues"
+    "url": "https://github.com/russ4stall/little-sunshine-pantries/issues"
   },
-  "homepage": "https://github.com/slashpinetech/little-sunshine-pantries#readme",
+  "homepage": "https://github.com/russ4stall/little-sunshine-pantries#readme",
   "dependencies": {
     "clsx": "2.1.1",
     "framer-motion": "^11.5.4",
