@@ -6,9 +6,31 @@ const RequestFoodDeliveryPage = () => {
   return (
     <Layout>
       <section className="bg-satin-linen-200">
+        <div className="mx-auto max-w-3xl space-y-6 px-4 py-16 text-center text-lg font-semibold text-mine-shaft-950 sm:px-6 lg:px-8">
+          <p>
+            Little Sunshine requests are currently closed. We will reopen requests on December 30, 2026.
+          </p>
+          <p>
+            To find other food resources in your area, we recommend calling{' '}
+            <a className="underline" href="tel:211">211</a> or using the following link:{' '}
+            <a
+              className="break-words underline"
+              href="https://fightinghunger.org/find-food/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://fightinghunger.org/find-food/
+            </a>
+          </p>
+          <p>
+            We apologize for any inconvenience, and we look forward to serving you in the new year. ☀️
+          </p>
+        </div>
+        {/* Requests are closed until December 30, 2026. Uncomment to restore the request form.
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <iframe className="airtable-embed" src="https://airtable.com/embed/appX16lmy5hv0Qto5/paglVGoWgVtVO7v5T/form" frameborder="0" onmousewheel="" width="100%" height="1400" style={{background: "transparent", border: "1px solid #ccc", overflow: "hidden"}}></iframe>
         </div>
+        */}
       </section>
     </Layout>
   );
