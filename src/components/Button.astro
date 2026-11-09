@@ -1,7 +1,6 @@
+---
+import type { HTMLAttributes } from 'astro/types';
 import clsx from 'clsx';
-import React, { forwardRef } from 'react';
-
-import { Link } from '@/components/link';
 
 const styles = {
   base: [
@@ -33,25 +32,14 @@ const styles = {
   }
 };
 
-type ButtonProps = (
-  | { color?: keyof typeof styles.colors; }
-) & { className?: string; children: React.ReactNode; } & (
-  | React.ButtonHTMLAttributes<HTMLButtonElement>
-  | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'className'>
-);
+type Props = { color?: keyof typeof styles.colors; class?: string; }
+  & (HTMLAttributes<'a'> | HTMLAttributes<'button'>);
 
-export const Button = forwardRef((
-  { color = 'pizazz', children, className, ...props }: ButtonProps,
-  ref: React.Ref<HTMLElement>
-) => {
-  const classes = clsx(
-    styles.base,
-    styles.solid,
-    styles.colors[color],
-    className
-  );
+const { color = 'pizazz', class: className, ...props } = Astro.props;
 
-  return 'href' in props
-    ? <Link {...props} className={classes} ref={ref as React.ForwardedRef<HTMLAnchorElement>}>{children}</Link>
-    : <button {...props as object} className={clsx(classes, 'cursor-default')} ref={ref as React.ForwardedRef<HTMLButtonElement>}>{children}</button>;
-});
+const classes = clsx(styles.base, styles.solid, styles.colors[color], className);
+---
+
+{'href' in props && props.href
+  ? <a {...props as HTMLAttributes<'a'>} class={classes}><slot /></a>
+  : <button {...props as HTMLAttributes<'button'>} class={clsx(classes, 'cursor-default')}><slot /></button>}

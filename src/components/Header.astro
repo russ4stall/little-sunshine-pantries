@@ -1,0 +1,42 @@
+---
+import clsx from 'clsx';
+
+import wordMark from '@/images/word-mark.svg';
+
+const navLinkStyles = [
+  'transition-colors hover:text-calypso-800',
+  'aria-[current=page]:border-b-2 aria-[current=page]:border-calypso-800 aria-[current=page]:font-bold aria-[current=page]:text-calypso-800'
+];
+
+const navLinks = [
+  { href: '/', label: 'about' },
+  { href: '/support', label: 'support' },
+  { href: '/find-food', label: 'find food now' }
+];
+
+const normalize = (path: string) => path.replace(/\/+$/, '') || '/';
+const currentPath = normalize(Astro.url.pathname);
+---
+
+<header class="bg-satin-linen-200 py-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav class="relative z-50 flex flex-col items-center justify-between gap-2 sm:flex-row">
+      <div class="flex items-center md:gap-x-12">
+        <a href="/">
+          <img alt="Little Sunshine Pantries" class="h-auto w-36" src={wordMark.src} />
+        </a>
+      </div>
+      <div class="flex items-center gap-6">
+        {navLinks.map(({ href, label }) => (
+          <a
+            aria-current={currentPath === href ? 'page' : undefined}
+            class={clsx(navLinkStyles)}
+            href={href}
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+    </nav>
+  </div>
+</header>

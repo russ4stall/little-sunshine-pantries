@@ -12,3 +12,48 @@ body {
   @apply scroll-smooth;
 }
 
+/*
+ * Hand-drawn underline animations (replaces framer-motion's pathLength).
+ * Paths set pathLength="1" so a dash of 1 spans the whole stroke.
+ *   .draw       draws when scrolled into view (class added by Layout script)
+ *   .draw-load  draws as soon as the page loads
+ * Tune per path with --draw-duration and --draw-delay.
+ */
+.draw,
+.draw-load {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+
+.draw {
+  transition:
+    stroke-dashoffset var(--draw-duration, 1s) ease-in-out var(--draw-delay, 0s),
+    opacity var(--draw-duration, 1s) ease-in-out var(--draw-delay, 0s);
+}
+
+.draw.is-drawn {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+.draw-load {
+  animation: draw var(--draw-duration, 1s) ease-in-out var(--draw-delay, 0s) forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draw,
+  .draw-load {
+    animation: none;
+    transition: none;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}

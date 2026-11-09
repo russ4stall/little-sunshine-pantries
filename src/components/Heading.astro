@@ -1,0 +1,25 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import clsx from 'clsx';
+
+type HeadingElementType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+const styles = {
+  base: 'text-mineshaft-950',
+  level: {
+    1: 'font-semibold text-4xl leading-tight md:text-6xl md:leading-tight',
+    2: 'font-bold text-6xl sm:text-7xl',
+    3: 'text-3xl font-bold'
+  }
+};
+
+type Props = {
+  level?: keyof typeof styles.level;
+  as?: HeadingElementType;
+} & HTMLAttributes<'h1'>;
+
+const { as, level = 1, class: className, ...props } = Astro.props;
+const HeadingElement: HeadingElementType = as ?? `h${level}`;
+---
+
+<HeadingElement {...props} class={clsx(styles.base, styles.level[level], className)}><slot /></HeadingElement>
