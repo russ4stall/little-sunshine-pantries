@@ -8,3 +8,6 @@ node_modules
 public
 .cache
 .vercel
+
+/dist
+.astro
