@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+
+import bagOfOranges from '@/images/brand-bag-of-oranges.png';
+import FacebookIcon from '@/images/facebook-icon.inline.svg';
+import InstagramIcon from '@/images/instagram-icon.inline.svg';
+import IntwLogo from '@/images/intw-logo.inline.svg';
+import SptLogo from '@/images/spt-logo.inline.svg';
+import SptWordMark from '@/images/spt-word-mark.inline.svg';
+---
+
+<footer class="bg-mine-shaft-950">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="flex flex-col items-center justify-between gap-10 md:flex-row md:gap-20">
+      <div class="flex shrink-0 justify-center md:-mt-28 md:justify-start">
+        <Image
+          alt="Little Sunshine Pantries bag of oranges brand"
+          class="w-36 sm:w-48 md:w-72 lg:w-96"
+          src={bagOfOranges}
+        />
+      </div>
+      <div class="flex flex-col gap-10">
+        <div class="flex justify-center gap-5 md:justify-start">
+          <a class="block text-calypso-600 transition-all hover:-translate-y-1 hover:text-calypso-500" href="https://www.facebook.com/LittleSunshinePantries">
+            <FacebookIcon class="size-10" />
+          </a>
+          <a class="block text-calypso-600 transition-all hover:-translate-y-1 hover:text-calypso-500" href="https://www.instagram.com/sunshine_pantries/">
+            <InstagramIcon class="size-10" />
+          </a>
+        </div>
+        <div class="flex-col text-center md:text-left">
+          <p class="text-base/6 text-calypso-600">
+            contact: <a href="mailto:needfood@littlesunshinepantries.com">needfood@littlesunshinepantries.com</a>
+          </p>
+          <p class="text-calypso-600">
+            © 2021–2024 Little Sunshine Pantries
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 md:justify-start">
+          <a class="flex w-60 space-x-4 rounded p-2 text-satin-linen-200 hover:bg-mine-shaft-900" href="https://slashpine.tech" target="_blank">
+            <SptLogo class="w-10" />
+            <span class="flex-col">
+              <span class="block">Developed By</span>
+              <SptWordMark class="w-40" />
+            </span>
+          </a>
+          <a class="flex w-60 space-x-4 rounded p-2 text-satin-linen-200 hover:bg-mine-shaft-900" href="https://carlyberry.design">
+            <IntwLogo class="w-10" />
+            <span class="flex-col">
+              <span class="block">Designed By</span>
+              <span class="uppercase tracking-widest">Carly Berry</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
